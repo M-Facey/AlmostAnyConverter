@@ -19,7 +19,7 @@ body {
 #sidenav {
     background:var(--primaryAccent);
     width:55px;
-    height:100%;
+    height:100vh;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -43,13 +43,13 @@ body {
 
 /* Each item in the sidenavigationbar */
 .sidenav-item {
+    /* do something here */
 }
 
 /* Power button */
 #power {
     position: absolute;
     bottom:5px;
-
 }
 
 /* Title bar container */
@@ -57,13 +57,11 @@ body {
     background:var(--primaryColor);
     color:white;
     height:40px;
-    position: absolute;
     display:flex;
+    position: relative;
     align-items: center;
     justify-content: center;
-    top:0px;
-    left:55px;
-    width: calc(100% - 55px);
+    width: 100%;
 }
 
 /* The title bar burger icon */
@@ -87,8 +85,8 @@ body {
 /* Absolutely positioned container with the main content as child */
 .container {
     position: absolute;
+    top: 0px;
     left:55px;
-    top:40px;
     width:calc(100% - 55px);
     height:100%;
 }
@@ -96,9 +94,8 @@ body {
 /* Container for the main content of the app */
 #main-content {
     width:100%;
-    height:100%;
+    height: calc(100% - 40px);
     position:relative;
-    padding-top:30px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -114,6 +111,10 @@ body {
     min-height:250px;
     position: relative;
     border: 3px var(--borderStyle) grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Invisible file input button */
@@ -127,9 +128,6 @@ body {
 /* Upload image */
 #dragarea img {
     display:block;
-    margin:auto;
-    margin-top:10px;
-    margin-bottom:20px;
 }
 
 /* Drag here text */
@@ -137,6 +135,8 @@ body {
     color:white;
     text-align: center;
     display:block;
+    margin-top: 20px;
+    font-size: 24px;
 }
 
 .isdraggedover {

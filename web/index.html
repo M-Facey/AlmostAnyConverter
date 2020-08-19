@@ -28,15 +28,14 @@
              
     </div>
 
-    <div id="main-title">
-        <img src="assets/menu-white.png" width=28px height=20px alt="">
-        Image Converter
-        <template v-if="!files.length">
-            <button onclick="">convert</button>
-        </template>
-    </div>
-
     <div class="container">
+        <div id="main-title">
+            <img src="assets/menu-white.png" width=28px height=20px alt="">
+            Image Converter
+            <template v-if="!files.length">
+                <button onclick="">convert</button>
+            </template>
+        </div>
         <div id="main-content">
             <div id="dragarea" class='drag-area'>
                 <template v-if='!files.length'>
