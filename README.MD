@@ -7,5 +7,6 @@ This is a media converter built with eel a python framework for using js, html, 
 -pip install eel
 
 # Run
-`python AlmostAnyConverter.py` [Windows]
-`python3 AlmostAnyConverter.py` [Ubuntu/ Mac]
+`python AlmostAnyConverter.py` [**Windows**]
+---
+`python3 AlmostAnyConverter.py` [**Ubuntu/ Mac**]
